@@ -11,7 +11,7 @@ package com.yan.designpattern.singleton;
 public class Singleton_3 {
   private static Singleton_3 instance = null;
   private Singleton_3(){}
-  public synchronized Singleton_3 getInstance(){
+  public static synchronized Singleton_3 getInstance(){
     if (null == instance)
       instance = new Singleton_3();
     return instance;

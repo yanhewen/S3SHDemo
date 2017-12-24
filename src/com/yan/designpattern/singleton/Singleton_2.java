@@ -11,7 +11,7 @@ package com.yan.designpattern.singleton;
 public class Singleton_2 {
   private static final Singleton_2 INSTANCE = new Singleton_2();
   private Singleton_2(){}
-  public Singleton_2 getInstance(){
+  public static Singleton_2 getInstance(){
     return INSTANCE;
   }
 }
